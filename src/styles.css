@@ -1,0 +1,37 @@
+/* You can add global styles to this file, and also import other style files */
+.selectize-control::after {
+  transition: opacity 0.2s;
+  content: '';
+  z-index: 2;
+  position: absolute;
+  right: 34px;
+  top: 12px;
+  height: 16px;
+  width: 16px;
+  background-image: url("/assets/images/spinner.gif");
+  background-size: 16px;
+  opacity: 0;
+}
+.selectize-control.multi::after {
+  right: 15px;
+}
+.selectize-control.loading::after {
+  opacity: 0.4;
+}
+.selectize-input {
+  box-shadow: none !important;
+}
+.selectize-dropdown {
+  top: 40px !important;
+}
+.selectize-dropdown .caption {
+  display: block;
+  font-size: 12px;
+  opacity: 0.5;
+}
+.selectize-dropdown-content [data-selectable] {
+  padding: 7px 10px;
+}
+.selectize-dropdown-content .active {
+  background: #eee;
+}
